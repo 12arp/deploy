@@ -1,0 +1,3 @@
+{
+  "extends": "DATABASE_URL=mongodb+srv://as0730728:AdiSri123@cluster0.yimnkvb.mongodb.net/blog"
+}

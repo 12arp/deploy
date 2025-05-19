@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="250" cy="250" r="240" fill="#000000" stroke="#F4B860" stroke-width="20"/>
+  <path d="M250 130 L250 370" stroke="#F4B860" stroke-width="20"/>
+  <path d="M100 250 L400 250" stroke="#F4B860" stroke-width="20"/>
+  <path d="M150 150 L350 150" stroke="#F4B860" stroke-width="20"/>
+  <path d="M150 350 L350 350" stroke="#F4B860" stroke-width="20"/>
+  <path d="M100 200 L400 200 L250 300 Z" fill="#F4B860"/>
+  <text x="250" y="100" text-anchor="middle" font-family="Arial" font-size="48" fill="#F4B860">5VOWELS</text>
+  <text x="250" y="420" text-anchor="middle" font-family="Arial" font-size="24" fill="#F4B860">LEARN ENGLISH, LOVE LANGUAGE</text>
+</svg> 
