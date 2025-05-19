@@ -47,10 +47,6 @@ const routeList: RouteProps[] = [
     label: "Founder",
   },
   {
-    href: "#contact",
-    label: "Contact",
-  },
-  {
     href: "/take-a-test",
     label: "Take a Test",
   },
