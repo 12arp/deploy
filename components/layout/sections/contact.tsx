@@ -5,7 +5,7 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import { Building2, Clock, Mail, Phone } from "lucide-react";
+import { Building2, Clock, Mail, Phone, Facebook } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -141,6 +141,16 @@ export const ContactSection = () => {
                 <div>
                     <h4 className="text-lg font-medium">Available Contact Hours</h4>
                     <p className="text-muted-foreground">Monday – Saturday (24/7)</p>
+                </div>
+            </div>
+
+            <div className="flex items-start space-x-3">
+                <Facebook className="w-6 h-6 text-primary mt-1" />
+                <div>
+                    <h4 className="text-lg font-medium">Facebook</h4>
+                    <p className="text-muted-foreground">
+                        <a href="https://www.facebook.com/profile.php?id=61556618766688" target="_blank" className="hover:text-primary">Connect with us on Facebook</a>
+                    </p>
                 </div>
             </div>
             

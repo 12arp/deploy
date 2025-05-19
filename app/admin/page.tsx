@@ -11,8 +11,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 import { toast } from "sonner";
-import { Loader2, Pencil, Trash2, Upload } from "lucide-react";
+import { Loader2, Pencil, Trash2, Upload, LogOut } from "lucide-react";
 import { RichTextEditor } from "@/components/RichTextEditor";
+import { useRouter } from "next/navigation";
+import Cookies from 'js-cookie';
 
 const API_URL = "https://backend420.onrender.com/api/articles";
 
@@ -36,6 +38,7 @@ type Article = {
 };
 
 export default function AdminPage() {
+  const router = useRouter();
   const [articles, setArticles] = useState<Article[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [editingId, setEditingId] = useState<string | null>(null);
@@ -53,8 +56,21 @@ export default function AdminPage() {
   });
 
   useEffect(() => {
+    // Check authentication
+    const isAuthenticated = Cookies.get('isAuthenticated') === 'true';
+    if (!isAuthenticated) {
+      router.push("/login");
+      return;
+    }
+
     fetchArticles();
-  }, []);
+  }, [router]);
+
+  const handleLogout = () => {
+    Cookies.remove('isAuthenticated');
+    Cookies.remove('userId');
+    router.push("/login");
+  };
 
   async function fetchArticles() {
     try {
@@ -143,7 +159,17 @@ export default function AdminPage() {
 
   return (
     <div className="container mx-auto py-12 px-4">
-      <h1 className="text-3xl font-bold mb-8">Admin Panel</h1>
+      <div className="flex justify-between items-center mb-8">
+        <h1 className="text-3xl font-bold">Admin Panel</h1>
+        <Button
+          variant="outline"
+          onClick={handleLogout}
+          className="flex items-center gap-2"
+        >
+          <LogOut className="h-4 w-4" />
+          Logout
+        </Button>
+      </div>
 
       <div className="grid gap-8 md:grid-cols-2">
         {/* Form Section */}

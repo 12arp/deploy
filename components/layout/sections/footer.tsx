@@ -90,7 +90,7 @@ export const FooterSection = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Connect</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="https://www.facebook.com/profile.php?id=61556618766688" target="_blank" className="opacity-60 hover:opacity-100">
                 Facebook
               </Link>
             </div>
