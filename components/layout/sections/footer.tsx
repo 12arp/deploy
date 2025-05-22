@@ -1,127 +1,105 @@
 "use client";
 
 import { Separator } from "@/components/ui/separator";
-import { ChevronsDownIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 export const FooterSection = () => {
   return (
-    <footer id="footer" className="container py-24 sm:py-32">
-      <div className="p-10 bg-card border border-secondary rounded-2xl">
-        <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
-          <div className="col-span-full xl:col-span-2">
-            <Link href="#" className="flex font-bold items-center">
+    <footer id="footer" className="container py-16 sm:py-20">
+      <div className="p-8 bg-card border border-secondary rounded-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="space-y-4">
+            <Link href="#" className="flex items-center space-x-2">
               <Image
                 src="/5vowels-logo.jpeg"
                 alt="5Vowels Logo"
                 width={40}
                 height={40}
-                className="mr-2"
+                className="rounded-full"
               />
-              <h3 className="text-2xl">5Vowels</h3>
+              <h3 className="text-2xl font-bold">5VOWELS</h3>
             </Link>
-            <p className="mt-4 text-muted-foreground">Empowering global communication through expert English education.</p>
+            <p className="text-muted-foreground">
+              Empowering global communication through expert English education.
+            </p>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Programs</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                General English
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Business English
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Test Preparation
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Study With Us</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Online Classes
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Learning Center
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Resources
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
+          {/* Support Links */}
+          <div className="space-y-4">
             <h3 className="font-bold text-lg">Support</h3>
-            <div>
-              <Link href="#contact" className="opacity-60 hover:opacity-100">
+            <div className="flex flex-col space-y-2">
+              <Link href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
                 Contact Us
               </Link>
-            </div>
-
-            <div>
-              <Link href="#faq" className="opacity-60 hover:opacity-100">
+              <Link href="#faq" className="text-muted-foreground hover:text-primary transition-colors">
                 FAQ
               </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 Student Support
               </Link>
             </div>
           </div>
 
-          <div className="flex flex-col gap-2">
+          {/* Social Links */}
+          <div className="space-y-4">
             <h3 className="font-bold text-lg">Connect</h3>
-            <div>
-              <Link href="https://www.facebook.com/profile.php?id=61556618766688" target="_blank" className="opacity-60 hover:opacity-100">
+            <div className="flex flex-col space-y-2">
+              <Link 
+                href="https://www.facebook.com/profile.php?id=61576019355051#" 
+                target="_blank" 
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Facebook
               </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link 
+                href="https://www.instagram.com/official5vowels?igsh=MThjZ3NsYnNjdDAyYg==" 
+                target="_blank"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Instagram
               </Link>
             </div>
+          </div>
 
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                LinkedIn
-              </Link>
+          {/* Contact Info */}
+          <div className="space-y-4">
+            <h3 className="font-bold text-lg">Contact</h3>
+            <div className="flex flex-col space-y-2 text-muted-foreground">
+              <p>Email: info@5vowels.com</p>
+              <p>Phone: +91 1234567890</p>
+              <p>Address: Patna, Bihar, India</p>
             </div>
           </div>
         </div>
 
-        <Separator className="my-6" />
-        <section className="flex justify-between items-center">
-          <h3 className="">
+        <Separator className="my-8" />
+
+        {/* Bottom Section */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-muted-foreground text-center md:text-left">
             &copy; 2024 5Vowels English Learning Academy. All rights reserved.
-          </h3>
-          <div className="flex gap-4">
-            <Link href="#" className="text-sm opacity-60 hover:opacity-100">Privacy Policy</Link>
-            <Link href="#" className="text-sm opacity-60 hover:opacity-100">Terms of Service</Link>
+          </p>
+          <div className="flex gap-6">
+            <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              Terms of Service
+            </Link>
           </div>
-        </section>
-        <section className="mt-3 text-center text-xs text-muted-foreground">
-          <p>Developed by CodientLabs</p>
-        </section>
+        </div>
+
+        <div className="mt-4 text-center text-xs text-muted-foreground">
+          <Link 
+            href="https://codientlabs.in" 
+            target="_blank" 
+            className="hover:text-primary transition-colors"
+          >
+            Developed by CodientLabs
+          </Link>
+        </div>
       </div>
     </footer>
   );

@@ -30,7 +30,7 @@ const reviewList: ReviewProps[] = [
     name: "Priya Sharma",
     userName: "Basic Level",
     comment:
-      "5Vowels transformed my English skills! The IELTS preparation course helped me achieve a band score of 7.5. The teachers are excellent and the flexible schedule is perfect for working professionals.",
+      "This platform is very helpful for beginners looking to improve their English skills. It offers simple lessons, clear explanations, and effective practice exercises that make learning easy, engaging, and productive.",
     rating: 5.0,
   },
   {
@@ -54,7 +54,7 @@ const reviewList: ReviewProps[] = [
     name: "Rahul Verma",
     userName: "Basic Level",
     comment:
-      "5Vowels' comprehensive approach to teaching English is outstanding. The mix of live classes and self-paced learning helped me score 110 in TOEFL. Thank you, 5Vowels!",
+      "Great platform for building strong English basics. The easy-to-follow, interactive lessons and supportive environment help learners gain confidence in speaking, writing, and overall communication skills effectively.",
     rating: 5.0,
   },
   {

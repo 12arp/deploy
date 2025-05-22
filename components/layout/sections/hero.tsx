@@ -30,9 +30,9 @@ export const HeroSection = () => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight animate-fade-in-up">
                 Master English with{" "}
                 <span className="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                  5Vowels
+                  5VOWELS
                 </span>{" "}
-                Academy
+                
               </h1>
 
               <div className="w-full flex">
@@ -49,12 +49,14 @@ export const HeroSection = () => {
               </Button>
 
               <Button
-                asChild
                 variant="secondary"
                 size="lg"
                 className="w-full sm:w-auto font-bold"
+                onClick={() => {
+                  document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
-                <Link href="#services">View Courses</Link>
+                View Courses
               </Button>
             </div>
 
