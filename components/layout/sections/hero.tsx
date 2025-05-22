@@ -48,16 +48,7 @@ export const HeroSection = () => {
                 <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
               </Button>
 
-              <Button
-                variant="secondary"
-                size="lg"
-                className="w-full sm:w-auto font-bold"
-                onClick={() => {
-                  document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                View Courses
-              </Button>
+             
             </div>
 
             {/* Stats */}
