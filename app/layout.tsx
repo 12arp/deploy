@@ -39,6 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/5vowels-logo.jpeg" type="image/jpeg" />
+      </head>
       <body className={cn("min-h-screen bg-background", inter.className)}>
         <ThemeProvider
           attribute="class"

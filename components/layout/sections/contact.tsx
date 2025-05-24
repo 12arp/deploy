@@ -71,7 +71,12 @@ export const ContactSection = () => {
 
       <div className="grid md:grid-cols-2 gap-10">
         <div>
-          <form className="space-y-6 p-8 border rounded-lg shadow-lg bg-muted/50">
+          <form 
+            action="https://api.web3forms.com/submit" 
+            method="POST"
+            className="space-y-6 p-8 border rounded-lg shadow-lg bg-muted/50"
+          >
+            <input type="hidden" name="access_key" value="44321920-03b2-4a8b-88ab-4b2a00d6a4e5" />
             <h3 className="text-2xl font-semibold mb-6">Send Us a Message</h3>
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -82,6 +87,7 @@ export const ContactSection = () => {
                 name="name"
                 id="name"
                 autoComplete="name"
+                required
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm dark:bg-gray-700 dark:text-white"
               />
             </div>
@@ -94,6 +100,7 @@ export const ContactSection = () => {
                 name="email"
                 id="email"
                 autoComplete="email"
+                required
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm dark:bg-gray-700 dark:text-white"
               />
             </div>
@@ -105,6 +112,7 @@ export const ContactSection = () => {
                 id="message"
                 name="message"
                 rows={4}
+                required
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm dark:bg-gray-700 dark:text-white"
                 defaultValue={''}
               />
