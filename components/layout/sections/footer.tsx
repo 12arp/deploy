@@ -68,7 +68,7 @@ export const FooterSection = () => {
             <h3 className="font-bold text-lg">Contact</h3>
             <div className="flex flex-col space-y-2 text-muted-foreground">
               <p>Email: info5vowels@gmail.com</p>
-              <p>Phone: +91 1234567890</p>
+              <p>Phone: +91 9810691741</p>
               <p>Address: Patna, Bihar, India</p>
             </div>
           </div>
