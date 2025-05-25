@@ -23,7 +23,7 @@ export const HeroSection = () => {
               <span className="mr-2 text-primary">
                 <Badge>Featured</Badge>
               </span>
-              <span> Start Learning English Today! </span>
+              <span> LEARN ENGLISH, LOVE LANGUAGE! </span>
             </Badge>
 
             <div className="space-y-4">

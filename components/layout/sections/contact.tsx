@@ -88,19 +88,22 @@ export const ContactSection = () => {
                 id="name"
                 autoComplete="name"
                 required
+                placeholder="Enter your full name"
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm dark:bg-gray-700 dark:text-white"
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                Email Address
+              <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                Contact Number
               </label>
               <input
-                type="email"
-                name="email"
-                id="email"
-                autoComplete="email"
+                type="tel"
+                name="phone"
+                id="phone"
+                autoComplete="tel"
                 required
+                pattern="[0-9]{10}"
+                placeholder="Enter your 10-digit mobile number"
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm dark:bg-gray-700 dark:text-white"
               />
             </div>
@@ -113,6 +116,7 @@ export const ContactSection = () => {
                 name="message"
                 rows={4}
                 required
+                placeholder="Type your message here..."
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm dark:bg-gray-700 dark:text-white"
                 defaultValue={''}
               />

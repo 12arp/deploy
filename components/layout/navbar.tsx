@@ -47,6 +47,10 @@ const routeList: RouteProps[] = [
     label: "Founder",
   },
   {
+    href: "https://docs.google.com/forms/d/1phfT8_J6gxqSwEqnhc-VnDV-BHCqHoikXwsUEU1skRg/edit",
+    label: "Register Now",
+  },
+  {
     href: "https://docs.google.com/forms/d/18-uy5Hv8jc3pHtjv5MaESS-DUOZBrQWdIvhlAmakaCs/edit",
     label: "Take a Test",
   },
